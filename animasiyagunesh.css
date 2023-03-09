@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.back {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: back 2s infinite;
+}
+.back .sun{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.back .moon{
+    width: 130px;
+    height: 130px;
+    background-color: lightblue;
+    border-radius: 50%;
+    animation: moon 2s infinite;
+}
+@keyframes back {
+0%{ 
+    background-color: lightblue;
+}
+40%, 60%{
+    background-color: blue;
+}
+100%{
+    background-color: lightblue;
+}
+
+
+}
+@keyframes moon {
+    0%{
+        transform: translateX(140px);
+        background-color: lightblue;
+    }
+    40%, 60%{
+        transform: translateX(-140px);
+        background-color: blue;
+    }
+    100%{
+        transform: translateX(-340px);
+        background-color: lightblue;
+    }
+}

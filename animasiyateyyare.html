@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        text-decoration: none;
+    }
+
+    .back {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(142, 219, 234);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .attackplane1 {
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(24, 199, 234);
+        padding-top: 20px;
+        animation: attackplane 2s infinite ;
+        animation-delay: 1s;
+    }
+
+    .attackplane2 {
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(24, 199, 234);
+        padding-bottom: 20px;
+        animation: attackplane 2s infinite;
+        animation-delay: 1s;
+    }
+    .plane{
+        font-size: 60px;
+        font-weight: 800;
+        color: rgb(13, 120, 142);
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        animation: plane 2s infinite ;
+        animation-delay: 0.8s;
+    }
+    @keyframes attackplane{
+        from{
+            transform: translateX(-50px);
+            opacity: 1;
+        }
+        
+        to{
+            transform: translateX(55px);
+            opacity: 0;
+        }
+    }
+    @keyframes plane{
+        from{     transform: translateX(-65px);
+        opacity: 1;}
+        to{     transform: translateX(65px);
+        opacity: 0;}
+    }
+</style>
+
+<body class="back">
+    <div class="circle">
+        <i class="fa-solid fa-jet-fighter attackplane1"></i>
+        <i class="fa-solid fa-plane plane"></i>
+        <i class="fa-solid fa-jet-fighter attackplane2"></i>
+    </div>
+
+</body>
+
+</html>

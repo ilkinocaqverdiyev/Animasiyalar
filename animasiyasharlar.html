@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animasiyasharlar.css" type="text/css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .back {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+        margin-left: 60px;
+    }
+
+    .back div:nth-child(1) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: top 1s infinite alternate;
+        
+    }
+    .back div:nth-child(2) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: top 1s infinite alternate;
+        animation-delay: 0.2s;
+    }
+    .back div:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: top 1s infinite alternate;
+        animation-delay: 0.4s;
+    }
+
+    .back div:nth-child(4) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: top 1s infinite alternate-reverse;
+        animation-delay: 1.6s;
+    }
+
+    .back div:nth-child(5) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: top 1s infinite alternate-reverse;
+        animation-delay: 1.8s;
+    }
+
+    .back div:nth-child(6) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: top 1s infinite alternate;
+        animation-delay: 2.9s;
+    }
+
+    @keyframes top {
+        0% {
+            background-color:blue;
+            opacity: 1;
+            transform: translateY(-90px);
+        }
+
+        50%,
+        60% {
+            background-color: red;
+            opacity: 1;
+            
+        }
+
+        100% {
+            background-color:green;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+   
+    
+</style>
+
+<body class="back">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

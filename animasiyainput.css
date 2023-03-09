@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(9, 134, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 30px;
+box-shadow: 0 0 10px white;
+
+
+
+}
+.simple{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    animation: top 2s infinite;
+}
+@keyframes top {
+    from{
+        transform: translateY(-80px);
+        opacity: 1;
+    }
+
+to {
+    transform: translateY(70px);
+    opacity: 0;
+}
+}

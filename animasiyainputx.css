@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
+.back{
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border: 8px solid orange;
+    color: orange;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.simple {
+    
+    height: 14px;
+    border-radius: 10px;
+    background-color:rgb(240, 229, 229);
+    animation: top 4s infinite;
+}
+@keyframes top {
+    0%{
+        width: 0%;
+    }
+    80%,85%{
+        width: 80%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
